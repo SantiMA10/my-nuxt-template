@@ -1,7 +1,14 @@
-const pkg = require('./package');
+import pkg from './package';
 
-module.exports = {
+export default {
   mode: 'spa',
+
+  buildModules: ['@nuxt/typescript-build'],
+
+  typescript: {
+    typeCheck: true,
+    ignoreNotFoundWarnings: true
+  },
 
   /*
    ** Headers of the page
@@ -53,7 +60,7 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
+    extend (config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

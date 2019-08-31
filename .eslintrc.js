@@ -7,19 +7,15 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser'
   },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['@nuxtjs/eslint-config-typescript'],
   plugins: ['@typescript-eslint', 'prettier'],
-  // add your custom rules here
   rules: {
+    semi: 'off',
+    '@typescript-eslint/semi': ['error'],
     '@typescript-eslint/no-unused-vars': 'error',
+    'space-before-function-paren': 'off',
+    'arrow-parens': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'vue/max-attributes-per-line': 'off',
-    'vue/html-closing-bracket-newline': 'off',
-    'vue/html-indent': 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 };
