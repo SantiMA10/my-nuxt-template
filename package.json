@@ -50,7 +50,7 @@
     "jest-serializer-vue": "^2.0.2",
     "nodemon": "^2.0.3",
     "prettier": "2.0.5",
-    "tailwindcss": "^1.2.0",
+    "tailwindcss": "^1.3.5",
     "ts-jest": "^25.3.1",
     "vue-jest": "^3.0.5"
   }
