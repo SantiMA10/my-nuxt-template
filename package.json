@@ -19,7 +19,7 @@
     "@nuxtjs/pwa": "^3.0.1",
     "cross-env": "^7.0.2",
     "nuxt": "^2.14.3",
-    "ts-node": "^8.10.2",
+    "ts-node": "^9.0.0",
     "vue-property-decorator": "^8.4.0"
   },
   "devDependencies": {
