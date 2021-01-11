@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.4",
-    "@nuxtjs/pwa": "^3.3.3",
+    "@nuxtjs/pwa": "^3.3.4",
     "cross-env": "^7.0.3",
     "nuxt": "^2.14.12",
     "ts-node": "^9.1.1",
